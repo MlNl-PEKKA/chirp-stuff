@@ -25,7 +25,7 @@ A **quick Twitter clone** built with modern full-stack technologies.
 - [x] Set up Next.js + tRPC
 - [x] Configure Tailwind + ShadCN
 - [x] Connect Neon (PostgreSQL) with Drizzle ORM
-- [ ] Implement Clerk authentication
+- [x] Implement Clerk authentication
 
 ### **Features & API**
 
