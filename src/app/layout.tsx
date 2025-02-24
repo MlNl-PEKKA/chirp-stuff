@@ -4,9 +4,11 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 import { ClerkProvider } from "@clerk/nextjs";
-import { TRPCReactProvider } from "~/trpc/react";
 import { ThemeProvider } from "~/components/theme-provider";
 import { Toaster } from "~/components/ui/sonner";
+import { TRPCReactProvider } from "~/trpc/react";
+import { SidebarProvider } from "~/components/ui/sidebar";
+import { Left } from "~/app/components/left";
 
 export const metadata: Metadata = {
   title: "chirp-stuff 🐥",
@@ -14,9 +16,7 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <ClerkProvider>
       <html
@@ -32,7 +32,10 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              {children}
+              <SidebarProvider>
+                <Left />
+                {children}
+              </SidebarProvider>
             </ThemeProvider>
             <Toaster />
           </TRPCReactProvider>
@@ -40,4 +43,6 @@ export default function RootLayout({
       </html>
     </ClerkProvider>
   );
-}
+};
+
+export default Layout;

@@ -1,7 +1,7 @@
 "use client";
 
-import { SignIn } from "./signIn";
-import { SignUp } from "./signUp";
+import { SignIn } from "./sign-in";
+import { SignUp } from "./sign-up";
 import { User } from "./user";
 
 export const Auth = () => {
