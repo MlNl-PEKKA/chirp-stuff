@@ -1,5 +1,5 @@
 import { api, HydrateClient } from "~/trpc/server";
-import { ToastButton } from "./_common/components/toastButton";
+import { ToastButton } from "~/app/components/toastButton";
 import { ModeToggle } from "~/components/mode-toggle";
 
 export default async function Home() {
