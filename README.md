@@ -1,4 +1,4 @@
-# Chirp-Stuff 🐦
+# Chirp-Stuff 🐥
 
 A **quick Twitter clone** built with modern full-stack technologies.
 
