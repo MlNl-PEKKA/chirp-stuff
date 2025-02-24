@@ -1,29 +1,56 @@
-# Create T3 App
+# Chirp-Stuff 🐦
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A **quick Twitter clone** built with modern full-stack technologies.
 
-## What's next? How do I make an app with this?
+## ✅ Tech Stack
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- **Framework**: Next.js + tRPC
+- **UI**: TailwindCSS + ShadCN
+- **Database**: Neon + PostgreSQL
+- **ORM**: Drizzle
+- **Auth**: Clerk
+- **Queues, Crons, Rate-Limiting**: Upstash (Kafka, Redis, Crons)
+- **File Storage**: UploadThing
+- **Payments**: Stripe
+- **Observability**: PostHog
+- **Error Tracking & Crashlytics**: Sentry
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+---
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 📌 Bucket List
 
-## Learn More
+### **Core Setup**
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- [x] Initialize repo
+- [x] Set up Next.js + tRPC
+- [ ] Configure Tailwind + ShadCN
+- [ ] Connect Neon (PostgreSQL) with Drizzle ORM
+- [ ] Implement Clerk authentication
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### **Features & API**
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- [ ] Build tweet model & API (create, delete, like, retweet)
+- [ ] UploadThing for media uploads (profile pics, images, etc.)
+- [ ] Stripe for premium features (blue ticks, etc.)
 
-## How do I deploy this?
+### **Final Touches & Deployment**
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- [ ] Rate-limiting with Upstash Redis
+- [ ] Error tracking with Sentry
+- [ ] Analytics & user insights with PostHog
+- [ ] Deployment (Vercel or custom)
+- [ ] Write documentation & final README
+
+### **Stretch Goals**
+
+- [ ] More RBAC
+- [ ] WebSockets for live notifications
+- [ ] Profile & settings page
+- [ ] Infinite scrolling for feeds
+- [ ] Dark mode
+
+---
+
+## 📜 License
+
+MIT
